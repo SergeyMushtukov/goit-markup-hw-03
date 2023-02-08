@@ -21,10 +21,56 @@ body {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid tomato; */
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+img {
+  display: block;
+}
+
 /* --------HEADER-------- */
 
 .header {
   background-color: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-navigation {
+  display: flex;
 }
 
 .logo {
@@ -35,6 +81,8 @@ body {
 }
 
 .header-logo {
+  margin-right: 76px;
+
   font-size: 18px;
   line-height: 1.33;
   color: #2e2f42;
@@ -47,6 +95,14 @@ body {
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .header-link {
@@ -73,6 +129,14 @@ body {
   color: inherit;
 }
 
+.address-list {
+  display: flex;
+}
+
+.address-item {
+  margin-right: 40px;
+}
+
 .header-mail:hover,
 .header-mail:focus,
 .header-tel:hover,
@@ -83,14 +147,21 @@ body {
 /* --------HERO-------- */
 
 .hero {
+  text-align: center;
 }
 .hero-title {
+  margin-bottom: 48px;
+
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   color: #ffffff;
 }
 .hero-btn {
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 16px 32px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -98,6 +169,7 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
 }
@@ -109,7 +181,21 @@ body {
 
 /* --------OUR ADVANTAGES-------- */
 
+.benefits-title-main {
+  display: none;
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 24px;
+}
+
 .benefits-title {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -122,12 +208,23 @@ body {
 
 /* --------WHAT ARE WE DOING-------- */
 
+.case.section {
+  padding-top: 0;
+}
+
 .case-title {
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
   color: var(--title-text-color);
+}
+
+.case-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* --------OUR TEAM-------- */
@@ -136,6 +233,8 @@ body {
   background-color: #f4f4fd;
 }
 .team-title {
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -143,35 +242,56 @@ body {
   color: var(--title-text-color);
 }
 
-.team-item {
-  background: #ffffff;
+.team-list {
+  display: flex;
+  justify-content: space-between;
 }
+
+.team-item {
+  padding-bottom: 32px;
+
+  text-align: center;
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .team-item-title {
+  margin-top: 32px;
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
   color: var(--title-text-color);
 }
+
 .team-item-text {
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
 }
 
 /* --------FOOTER-------- */
 
 .footer {
+  padding: 100px 0;
+
   background-color: var(--title-text-color);
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+
   font-size: 18px;
   line-height: 1.17;
   color: #f4f4fd;
 }
 
 .footer-text {
+  width: 264px;
+
   font-size: 16px;
   line-height: 1.5;
   color: #e7e9fc;
@@ -179,7 +299,29 @@ body {
 
 /* -------------PORTFOLIO PAGE------------- */
 
+.examples {
+  padding-top: 96px;
+}
+
+.examples-title-main {
+  display: none;
+}
+
+.examples-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.examples-btn-item:not(:last-child) {
+  margin-right: 24px;
+}
+
 .examples-btn {
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -195,12 +337,24 @@ body {
 .examples-btn:focus {
   color: #ffffff;
   background-color: var(--hover-bg-color);
+  border-color: transparent;
+}
+
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .examples-item {
+  flex-basis: calc((100%-48px)/3);
+
   background-color: #ffffff;
 }
 .examples-item-title {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -212,8 +366,24 @@ body {
   color: var(--primary-text-color);
 }
 .examples-hover-text {
-font-size: 16px;
-line-height: 1.5;
-color: #F4F4FD;
-background-color: var(--hover-bg-color);
+  display: none;
+  padding: 40px 32px;
+  min-height: 300px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4fd;
+  background-color: var(--hover-bg-color);
+}
+
+.card-border {
+  padding: 32px 16px 32px 16px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
+
+.examples-item > .link {
+  display: block;
+  /* width: 360px; */
 }
