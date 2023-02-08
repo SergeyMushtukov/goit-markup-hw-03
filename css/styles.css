@@ -348,10 +348,15 @@ img {
 }
 
 .examples-item {
-  flex-basis: calc((100%-48px)/3);
+  flex-basis: calc((100% - 48px)/3);
 
   background-color: #ffffff;
 }
+
+/* .examples-item > .link {
+  display: inline-block ;
+} */
+
 .examples-item-title {
   margin-bottom: 8px;
 
@@ -383,7 +388,4 @@ img {
   border-left: 1px solid #e7e9fc;
 }
 
-.examples-item > .link {
-  display: block;
-  /* width: 360px; */
-}
+
